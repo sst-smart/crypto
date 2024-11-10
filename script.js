@@ -82,7 +82,7 @@ async function getPrice() {
             if (document.getElementById('currency').value) {
                 if (item["symbol"] === document.getElementById('currency').value){
                     if (soundAlarm) {
-                        new Audio("/Website-JavaScript/project_04_binance/airport-announcement-ding.wav").play();
+                        new Audio("/airport-announcement-ding.wav").play();
                     }
                     const row = document.createElement('tr');
                     const symbol = document.createElement('td');
@@ -111,7 +111,7 @@ async function getPrice() {
 
             } else {
                 if (soundAlarm) {
-                    new Audio("/Website-JavaScript/project_04_binance/airport-announcement-ding.wav").play();
+                    new Audio("airport-announcement-ding.wav").play();
                 }
                 const row = document.createElement('tr');
                 const symbol = document.createElement('td');
