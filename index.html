@@ -23,23 +23,30 @@
     </div>
 
     <div id="control">
-      <button id="stopAndStart" onclick="stopAlarm()">Start</button>
-      <label for="percentage">Percentage</label>
-      <input id="percentage"/><span> %</span>
+      <button id="stopAndStart" onclick="stopAlarm()">Start Alarm Sound</button><br></br>
+      <div>
+        <label for="percentage">Percentage:</label>
+        <input id="percentage"/><span> %</span>
+      </div>
+      <div>
+        <label for="currency">Currency  :</label>
+        <input id="currency"/>
+      </div>
+      <div>
+        <label for="currencyPrice">Price     :</label>
+        <input id="currencyPrice"/>
+      </div>
     </div>
     <!-- Table for displaying cryptocurrency data -->
-    <table>
-        <thead id="cryptoTableHead">
+    <table id="cryptoTable">
+        <thead>
             <tr>
                 <th>symbol</th>
-                <th>priceChangePercent</th>
+                <th>Percentage</th>
                 <th>Price</th>
-                <th>openPrice</th>
-                <th>highPrice</th>
-                <th>lowPrice</th>
-                <th>volume</th>
-                <th>openTime</th>
-                <th>closeTime</th>
+<!--                <th>volume</th>-->
+<!--                <th>openTime</th>-->
+<!--                <th>closeTime</th>-->
             </tr>
         </thead>
         <tbody id="cryptoTableBody">
