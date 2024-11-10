@@ -9,14 +9,31 @@
 </head>
 <body>
     <h1>Cryptocurrency Price</h1>
+    <div id="loginPage" class="container">
+<!--        <h2>Sign Up</h2>-->
+<!--        <input type="text" id="signUpName" placeholder="Name" required>-->
+<!--        <input type="text" id="signUpEmail" placeholder="Email" required>-->
+<!--        <input type="password" id="signUpPassword" placeholder="Password" required>-->
+<!--        <button onclick="signUp()">Sign Up</button>-->
 
+        <h2>Login</h2>
+        <input type="text" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="control">
+      <button id="stopAndStart" onclick="stopAlarm()">Start</button>
+      <label for="percentage">Percentage</label>
+      <input id="percentage"/><span> %</span>
+    </div>
     <!-- Table for displaying cryptocurrency data -->
     <table>
-        <thead>
+        <thead id="cryptoTableHead">
             <tr>
                 <th>symbol</th>
                 <th>priceChangePercent</th>
-                <th>lastPrice</th>
+                <th>Price</th>
                 <th>openPrice</th>
                 <th>highPrice</th>
                 <th>lowPrice</th>
