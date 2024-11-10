@@ -49,7 +49,7 @@ function login() {
 
     if (user) {
         // alert('Login successful! Welcome, ' + user.name + '.');
-        setInterval(getPrice, 2000);
+        setInterval(getPrice, 4000);
         document.getElementById('loginPage').style.display = 'none';
         document.getElementById('cryptoTable').style.visibility = 'visible';
         document.getElementById('control').style.visibility = 'visible';
@@ -111,7 +111,7 @@ async function getPrice() {
 
             } else {
                 if (soundAlarm) {
-                    new Audio("airport-announcement-ding.wav").play();
+                    new Audio("/airport-announcement-ding.wav").play();
                 }
                 const row = document.createElement('tr');
                 const symbol = document.createElement('td');
